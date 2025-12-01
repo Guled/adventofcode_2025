@@ -50,7 +50,7 @@ def part2(input_data: str) -> int:
 
 if __name__ == "__main__":
     # Read input file
-    with open("inputs/day01.txt", "r") as f:
+    with open("inputs/day01.txt", "r", encoding="utf-8") as f:
         puzzle_input = f.read()
     
     print(f"Part 1: {part1(puzzle_input)}")

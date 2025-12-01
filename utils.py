@@ -4,13 +4,13 @@ from typing import List
 
 def read_input(filename: str) -> str:
     """Read the entire input file as a string."""
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         return f.read()
 
 
 def read_lines(filename: str) -> List[str]:
     """Read input file and return a list of lines (with newlines stripped)."""
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f.readlines()]
 
 
